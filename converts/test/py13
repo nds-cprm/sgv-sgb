@@ -1,0 +1,71 @@
+import os
+import pandas as pd
+from access_parser import AccessParser
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando extração robusta com suporte a registros únicos: {DB_FILE}")
+
+try:
+    # 2. CARREGAR O ARQUIVO ACCESS
+    db = AccessParser(DB_FILE)
+    tables = db.catalog
+    print(f"Tabelas encontradas no catálogo: {list(tables.keys())}")
+    
+    # 3. EXPORTAR CADA TABELA
+    for table_name in tables:
+        # Substitui espaços por underlines no nome do arquivo final do CSV
+        safe_filename = table_name.replace(" ", "_") + ".csv"
+        file_path = os.path.join(OUTPUT_DIR, safe_filename)
+        
+        print(f"Processando tabela: '{table_name}' -> {safe_filename}...")
+        
+        try:
+            # Extrai a tabela do banco
+            parsed_table = db.parse_table(table_name)
+            
+            # CORREÇÃO CRÍTICA: Mapeamento de dicionários e defaultdicts
+            if isinstance(parsed_table, dict) or str(type(parsed_table)).to_lower().find("dict") != -1:
+                adjusted_table = {}
+                
+                for col_name, col_values in parsed_table.items():
+                    # Se o valor dentro da coluna for uma string pura ou número isolado (não for lista/tupla)
+                    if isinstance(col_values, (str, int, float, bytes)) or not hasattr(col_values, '__iter__'):
+                        # Envelopamos em uma lista para o Pandas entender que é uma linha de dados
+                        adjusted_table[col_name] = [col_values]
+                    else:
+                        # Se já for uma lista/coleção de várias linhas, mantém como está
+                        adjusted_table[col_name] = list(col_values)
+                
+                df = pd.DataFrame(adjusted_table)
+            else:
+                # Caso a biblioteca retorne uma lista tradicional para outras tabelas
+                df = pd.DataFrame(parsed_table)
+            
+            # Validação final de conteúdo
+            if df.empty:
+                print(f"⚠️  Aviso: A tabela '{table_name}' não possui registros válidos.")
+                continue
+            
+            # Salva o arquivo CSV final
+            df.to_csv(file_path, index=False, encoding='utf-8')
+            print(f"✅ Sucesso: '{table_name}' exportada perfeitamente com {len(df)} linha(s).")
+            
+        except Exception as table_err:
+            print(f"❌ Não foi possível extrair os dados da tabela '{table_name}': {table_err}")
+
+except Exception as e:
+    print(f"❌ Erro crítico ao processar o banco de dados: {e}")
+
+print(f"\nProcesso finalizado. Verifique a pasta: {OUTPUT_DIR}")
+

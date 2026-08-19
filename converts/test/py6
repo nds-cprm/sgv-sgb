@@ -1,0 +1,62 @@
+
+import os
+import duckdb
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando exportação com DuckDB: {DB_FILE}")
+
+# Inicia o DuckDB em memória
+con = duckdb.connect(database=':memory:')
+
+try:
+    # Instala e carrega a extensão espacial atualizada
+    con.execute("INSTALL spatial;")
+    con.execute("LOAD spatial;")
+    
+    # FORMATO CORRIGIDO: Usamos a tabela de metadados do próprio driver de arquivos para listar as tabelas
+    # Isso evita o erro 'st_layers does not exist'
+    tables_query = f"SELECT layer_name FROM st_drivers() WHERE driver_name = 'MDB' OR driver_name = 'Geomedia';"
+    
+    # Se o comando acima falhar no seu formato de arquivo, usamos a leitura direta do catálogo:
+    # O DuckDB lê arquivos Access usando a função st_read do pacote GDAL interno.
+    # Para listar as tabelas de forma infalível sem a função antiga, consultamos o arquivo como um vetor:
+    tables_result = con.execute(f"SELECT DISTINCT layer_name FROM ST_Metadata('{DB_FILE}')").fetchall()
+    tables = [row[0] for row in tables_result]
+    
+    print(f"Tabelas encontradas no banco: {tables}")
+
+    # 2. EXPORTAR CADA TABELA DIRETAMENTE PARA CSV
+    for table in tables:
+        # Substitui espaços por underlines no nome do arquivo final
+        safe_filename = table.replace(" ", "_") + ".csv"
+        file_path = os.path.join(OUTPUT_DIR, safe_filename)
+        
+        print(f"Exportando tabela: '{table}' -> {safe_filename}...")
+        
+        # Usamos aspas duplas duplas para envelopar o nome com espaço perfeitamente
+        export_query = f"""
+            COPY (SELECT * FROM st_read('{DB_FILE}', layer='"{table}"')) 
+            TO '{file_path}' 
+            (HEADER, DELIMITER ',');
+        """
+        con.execute(export_query)
+        print(f"✅ Tabela '{table}' exportada com sucesso.")
+
+except Exception as e:
+    print(f"❌ Ocorreu um erro no DuckDB: {e}")
+finally:
+    con.close()
+
+print(f"\nProcesso concluído! Verifique a pasta: {OUTPUT_DIR}")
+

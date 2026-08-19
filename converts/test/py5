@@ -1,0 +1,55 @@
+import os
+import csv
+from meza import io
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando exportação profunda com Meza: {DB_FILE}")
+
+try:
+    # 2. ABRIR E LER O ARQUIVO ACCESS COMPLETAMENTE
+    # A meza lê o arquivo de forma binária nativa
+    records = io.read(DB_FILE)
+    
+    # 3. EXTRAIR AS TABELAS E DADOS
+    # O objeto records contém dicionários estruturados de dados
+    for table_name, table_data in records:
+        # Substitui espaços por underlines no nome do arquivo CSV final
+        safe_filename = table_name.replace(" ", "_") + ".csv"
+        file_path = os.path.join(OUTPUT_DIR, safe_filename)
+        
+        print(f"Exportando tabela: '{table_name}' -> {safe_filename}...")
+        
+        # Converte o gerador de dados da tabela em uma lista
+        rows = list(table_data)
+        
+        if not rows:
+            print(f"⚠️  Aviso: A tabela '{table_name}' está vazia no banco.")
+            continue
+            
+        # Pega as chaves do primeiro dicionário para definir o cabeçalho do CSV
+        headers = rows[0].keys()
+        
+        # Grava os dados diretamente no arquivo CSV de forma limpa
+        with open(file_path, 'w', newline='', encoding='utf-8') as csv_file:
+            writer = csv.DictWriter(csv_file, fieldnames=headers)
+            writer.writeheader()
+            writer.writerows(rows)
+            
+        print(f"✅ Tabela '{table_name}' exportada com sucesso ({len(rows)} linhas).")
+
+except Exception as e:
+    print(f"❌ Ocorreu um erro durante o processamento binário: {e}")
+
+print(f"\nProcesso concluído! Verifique os resultados na pasta: {OUTPUT_DIR}")
+

@@ -1,0 +1,53 @@
+import os
+import msaccessdb
+import pandas as pd
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando extração protegida: {DB_FILE}")
+
+try:
+    # O msaccessdb lista as tabelas de forma isolada, evitando quebras de memória
+    tables = msaccessdb.list_tables(DB_FILE)
+    print(f"Tabelas encontradas: {tables}")
+    
+    # 2. ITERAR SOBRE AS TABELAS
+    for table in tables:
+        # Cria um nome de arquivo seguro substituindo espaços por underline
+        safe_filename = table.replace(" ", "_") + ".csv"
+        file_path = os.path.join(OUTPUT_DIR, safe_filename)
+        
+        print(f"Exportando: '{table}' -> {safe_filename}...")
+        
+        try:
+            # O msaccessdb lê a tabela inteira como uma lista de dicionários nativos do Python
+            # Isso impede o Core Dump porque quem gerencia a memória é o próprio interpretador Python
+            rows = msaccessdb.read_table(DB_FILE, table)
+            
+            if not rows:
+                print(f"⚠️  Aviso: Tabela '{table}' está vazia.")
+                continue
+                
+            # Transforma em DataFrame do Pandas e salva em CSV
+            df = pd.DataFrame(rows)
+            df.to_csv(file_path, index=False, encoding='utf-8')
+            print(f"✅ Tabela '{table}' exportada com sucesso ({len(df)} linhas).")
+            
+        except Exception as table_error:
+            print(f"❌ Falha ao ler dados da tabela '{table}': {table_error}")
+
+except Exception as e:
+    print(f"❌ Erro crítico no mapeamento do arquivo: {e}")
+
+print(f"\nProcesso finalizado. Verifique a pasta: {OUTPUT_DIR}")
+

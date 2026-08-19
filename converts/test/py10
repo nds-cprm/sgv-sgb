@@ -1,0 +1,58 @@
+import os
+import pandas as pd
+from access_parser import AccessParser
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando extração binária com access-parser: {DB_FILE}")
+
+try:
+    # 2. CARREGAR O ARQUIVO ACCESS
+    # O parser abre o arquivo de forma limpa em nível de bytes
+    db = AccessParser(DB_FILE)
+    
+    # Captura a lista de todas as tabelas (funciona perfeitamente com espaços)
+    tables = db.catalog
+    print(f"Tabelas encontradas: {list(tables.keys())}")
+    
+    # 3. EXPORTAR CADA TABELA
+    for table_name in tables:
+        # Substitui espaços por underlines no nome do arquivo final do CSV
+        safe_filename = table_name.replace(" ", "_") + ".csv"
+        file_path = os.path.join(OUTPUT_DIR, safe_filename)
+        
+        print(f"Processando tabela: '{table_name}' -> {safe_filename}...")
+        
+        try:
+            # Extrai os dados da tabela diretamente
+            # Retorna uma estrutura parecida com um dicionário (colunas e linhas)
+            parsed_table = db.parse_table(table_name)
+            
+            # Transforma diretamente em um DataFrame do Pandas
+            df = pd.DataFrame(parsed_table)
+            
+            if df.empty:
+                print(f"⚠️  Aviso: A tabela '{table_name}' gerou um arquivo vazio.")
+            
+            # Salva o arquivo CSV final
+            df.to_csv(file_path, index=False, encoding='utf-8')
+            print(f"✅ Sucesso: '{table_name}' exportada com {len(df)} linhas.")
+            
+        except Exception as table_err:
+            print(f"❌ Não foi possível extrair os dados da tabela '{table_name}': {table_err}")
+
+except Exception as e:
+    print(f"❌ Erro crítico ao processar o banco de dados: {e}")
+
+print(f"\nProcesso finalizado. Verifique a pasta: {OUTPUT_DIR}")
+

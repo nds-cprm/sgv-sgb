@@ -1,0 +1,58 @@
+
+import os
+import subprocess
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando exportação de: {DB_FILE}")
+
+# 2. BUSCAR TODAS AS TABELAS
+try:
+    result = subprocess.run(['mdb-tables', '-1', DB_FILE], capture_output=True, text=True, check=True)
+    tables = [line.strip() for line in result.stdout.split('\n') if line.strip()]
+except subprocess.CalledProcessError as e:
+    print(f"Erro ao ler o banco. Detalhes: {e}")
+    exit(1)
+
+# 3. EXPORTAR DIRETAMENTE PARA ARQUIVO
+for table in tables:
+    # Cria o nome do arquivo final substituindo espaços por underlines (evita problemas no Linux)
+    safe_filename = table.replace(" ", "_") + ".csv"
+    file_path = os.path.join(OUTPUT_DIR, safe_filename)
+    
+    print(f"Tentando exportar: {table} -> {safe_filename}")
+    
+    try:
+        # Abrimos o arquivo final diretamente no modo de escrita
+        with open(file_path, 'w', encoding='utf-8') as f:
+            # O mdb-export joga o resultado direto para dentro do arquivo físico
+            subprocess.run(['mdb-export', DB_FILE, table], stdout=f, stderr=subprocess.PIPE, check=True)
+        
+        # Checagem de segurança: conta quantas linhas o arquivo tem
+        with open(file_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            row_count = len(lines)
+            
+        if row_count <= 1:
+            print(f"⚠️  Aviso: '{table}' gerou apenas o cabeçalho ({row_count} linhas). Pode ser uma Consulta/Query vazia.")
+        else:
+            print(f"✅ Sucesso: '{table}' exportada com {row_count - 1} linhas de dados.")
+            
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Erro crítico ao exportar a tabela '{table}': {e.stderr.decode().strip()}")
+        # Remove o arquivo que falhou para não deixar lixo na pasta
+        if os.path.exists(file_path):
+            os.remove(file_path)
+
+print(f"\nProcesso concluído! Verifique a pasta: {OUTPUT_DIR}")
+

@@ -1,0 +1,57 @@
+import os
+import duckdb
+
+# 1. CONFIGURAÇÃO DE VARIÁVEIS
+DB_FILE = "a.db"
+OUTPUT_DIR = "./csvs"
+
+# Garante que o arquivo do banco existe
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+# Cria a pasta de destino se não existir
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+print(f"Iniciando exportação com DuckDB: {DB_FILE}")
+
+# Inicia o DuckDB em memória
+con = duckdb.connect(database=':memory:')
+
+try:
+    # Instala e carrega a extensão espacial
+    con.execute("INSTALL spatial;")
+    con.execute("LOAD spatial;")
+    
+    # COMANDO CORRIGIDO: Usando a coluna 'layers' que o DuckDB listou no erro
+    tables_result = con.execute(f"SELECT DISTINCT layers FROM ST_Read_Meta('{DB_FILE}')").fetchall()
+    
+    # Extrai os nomes das tabelas limpando a tupla do Python
+    tables = [row[0] for row in tables_result if row[0]]
+    
+    print(f"Tabelas encontradas no banco: {tables}")
+
+    # 2. EXPORTAR CADA TABELA DIRETAMENTE PARA CSV
+    for table in tables:
+        # Substitui espaços por underlines no nome do arquivo final do CSV
+        safe_filename = table.replace(" ", "_") + ".csv"
+        file_path = os.path.join(OUTPUT_DIR, safe_filename)
+        
+        print(f"Exportando tabela: '{table}' -> {safe_filename}...")
+        
+        # Envelopamos o nome da tabela com aspas duplas ("{table}") para proteger os espaços no motor SQL
+        export_query = f"""
+            COPY (SELECT * FROM ST_Read('{DB_FILE}', layer='"{table}"')) 
+            TO '{file_path}' 
+            (HEADER, DELIMITER ',');
+        """
+        con.execute(export_query)
+        print(f"✅ Tabela '{table}' exportada com sucesso.")
+
+except Exception as e:
+    print(f"❌ Ocorreu um erro no DuckDB: {e}")
+finally:
+    con.close()
+
+print(f"\nProcesso concluído! Verifique a pasta: {OUTPUT_DIR}")
+

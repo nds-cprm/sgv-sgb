@@ -1,0 +1,33 @@
+import os
+from access_parser import AccessParser
+
+DB_FILE = "a.db"
+
+if not os.path.exists(DB_FILE):
+    print(f"Erro: O arquivo '{DB_FILE}' não foi encontrado!")
+    exit(1)
+
+print("Iniciando diagnóstico da tabela 'Text Symbols'...\n")
+
+try:
+    db = AccessParser(DB_FILE)
+    parsed_table = db.parse_table('Text Symbols')
+    
+    # 1. Mostra o tipo do objeto retornado
+    print(f"-> Tipo de dados retornado: {type(parsed_table)}")
+    
+    # 2. Mostra uma amostra do conteúdo bruto
+    if isinstance(parsed_table, dict):
+        print(f"-> Chaves encontradas (Colunas): {list(parsed_table.keys())}")
+        for col, val in list(parsed_table.items())[:2]: # Pega as duas primeiras colunas
+            print(f"   Amostra da coluna '{col}': Tipo {type(val)} | Conteúdo: {str(val)[:200]}")
+    elif isinstance(parsed_table, list):
+        print(f"-> Quantidade de itens na lista: {len(parsed_table)}")
+        if parsed_table:
+            print(f"   Amostra do primeiro item: {str(parsed_table[0])[:200]}")
+    else:
+        print(f"-> Conteúdo bruto desconhecido: {str(parsed_table)[:300]}")
+
+except Exception as e:
+    print(f"❌ Erro ao tentar ler os dados brutos: {e}")
+
