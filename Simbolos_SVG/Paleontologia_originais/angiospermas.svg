@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.5716mm" height="6.2585mm" version="1.1" viewBox="0 0 3.943 3.7551" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-46.355 -78.507)">
+  <g id="Angiospermas" transform="matrix(.006 0 0 .006 -30.277 -50.742)" clip-rule="evenodd" fill="#fff" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m13103 21852s-44-208 0-264 169-67 174 58c2 65-174 206-174 206z"/>
+   <path class="fil0 str0" d="m13100 21857s44 208 0 264-169 67-174-58c-2-65 174-206 174-206z"/>
+   <path class="fil0 str0" d="m13098 21859s202 66 229 132c26 66-27 180-137 121-57-30-91-254-91-254z"/>
+   <path class="fil0 str0" d="m13096 21854s-202-66-228-132 27-180 137-121c57 30 91 254 91 254z"/>
+   <path class="fil0 str0" d="m13103 21852s165-135 234-122c70 13 137 119 29 181-56 32-263-59-263-59z"/>
+   <path class="fil0 str0" d="m13098 21852s-165 135-234 122c-70-13-137-119-29-181 56-32 263 59 263 59z"/>
+   <path class="fil0 str0" d="m13152 21854c0 29-24 53-53 53s-53-24-53-53 24-53 53-53 53 24 53 53z"/>
+  </g>
+ </g>
+</svg>

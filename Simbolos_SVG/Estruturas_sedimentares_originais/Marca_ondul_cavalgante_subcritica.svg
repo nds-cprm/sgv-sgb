@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="9.3472mm" height="5.5675mm" version="1.1" viewBox="0 0 9.3472 5.5675" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-62.28 -100.33)">
+  <g transform="matrix(.01 0 0 .01 41.115 20.513)" clip-rule="evenodd" fill="none" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="50">
+   <line class="fil2 str1" x1="2125" x2="3038" y1="8228" y2="8006"/>
+   <line class="fil2 str1" x1="2122" x2="3043" y1="8379" y2="8170"/>
+   <line class="fil2 str1" x1="2122" x2="3046" y1="8514" y2="8318"/>
+   <line class="fil2 str1" x1="2403" x2="2405" y1="8454" y2="8314"/>
+   <line class="fil2 str1" x1="2764" x2="2761" y1="8378" y2="8234"/>
+   <line class="fil2 str1" x1="2892" x2="2891" y1="8204" y2="8041"/>
+   <line class="fil2 str1" x1="2561" x2="2559" y1="8279" y2="8122"/>
+   <line class="fil2 str1" x1="2181" x2="2183" y1="8365" y2="8214"/>
+  </g>
+ </g>
+</svg>

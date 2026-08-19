@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="9.69mm" height="3.32mm" version="1.1" viewBox="0 0 9.69 3.32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-59.494 -102.4)">
+  <g transform="matrix(.01 0 0 .01 37.544 -55.476)" clip-rule="evenodd" fill="none" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="50">
+   <path class="fil2 str1" d="m2195 15813h968"/>
+   <path class="fil2 str1" d="m2196 16095h968"/>
+   <polyline class="fil2 str1" points="2434 15812 2263 15894 2358 16033 2258 16095"/>
+   <polyline class="fil2 str1" points="2674 15812 2503 15894 2598 16033 2498 16095"/>
+   <polyline class="fil2 str1" points="2915 15812 2745 15894 2840 16033 2739 16095"/>
+   <polyline class="fil2 str1" points="3146 15812 2976 15894 3071 16033 2970 16095"/>
+  </g>
+ </g>
+</svg>

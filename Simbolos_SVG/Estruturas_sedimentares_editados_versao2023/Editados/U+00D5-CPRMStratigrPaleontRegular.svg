@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.1790466mm"
+   height="2.9548392mm"
+   version="1.1"
+   viewBox="0 0 8.1790471 2.9548391"
+   id="svg850"
+   sodipodi:docname="Marca_ondul_cavalgante_supercritica.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs854" />
+  <sodipodi:namedview
+     id="namedview852"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="20"
+     inkscape:cx="15.975"
+     inkscape:cy="5.55"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg850" />
+  <metadata
+     id="metadata840">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-62.810274,-100.7594)"
+     id="g848">
+    <g
+       transform="matrix(0.01,0,0,0.01,41.635,31.876)"
+       clip-rule="evenodd"
+       fill="none"
+       fill-rule="evenodd"
+       image-rendering="optimizeQuality"
+       shape-rendering="geometricPrecision"
+       stroke="#000000"
+       stroke-width="50"
+       id="g846">
+      <path
+         class="fil2 str1"
+         d="m 2125,7050 c 72,-34 145,-69 194,-90 50,-22 77,-30 107,-21 30,10 63,38 97,56 34,18 69,25 103,19 34,-6 67,-24 97,-42 31,-18 60,-34 85,-46 25,-12 45,-19 65,-20 20,-1 39,3 59,7"
+         id="path842"
+         style="stroke-width:35;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         class="fil2 str1"
+         d="m 2125,7168 c 72,-34 145,-69 194,-90 50,-22 77,-30 107,-21 30,10 63,38 97,56 34,18 69,25 103,19 34,-6 67,-24 97,-42 31,-18 60,-34 85,-46 25,-12 45,-19 65,-20 20,-1 39,3 59,7"
+         id="path844"
+         style="stroke-width:35;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>

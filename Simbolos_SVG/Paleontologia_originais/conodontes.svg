@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.3094mm" height="5.1192mm" version="1.1" viewBox="0 0 3.7856 3.0715" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.792 -77.783)">
+  <g id="Conodontes" transform="matrix(.006 0 0 .006 -71.956 38.575)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m19472 6865c12 22 90 175 90 175l278-19s176-154 219-244c36-75 20-166 20-166s-41 85-80 119c-29 25-73 42-73 42s-19-66-39-104c-20-37-63-92-63-92s14 85-7 119c-20 34-54 64-54 64s-80-107-136-151-146-63-146-63 129 141 117 219-127 100-127 100z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m19533 6980c69-18 98-100 146-102 47-2 147 81 162 141" fill="none"/>
+  </g>
+ </g>
+</svg>

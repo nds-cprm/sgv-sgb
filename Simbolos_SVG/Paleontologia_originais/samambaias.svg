@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.9495mm" height="4.0538mm" version="1.1" viewBox="0 0 4.1697 2.4323" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.463 -79.682)">
+  <g id="Samambaias" transform="matrix(.006 0 0 .006 -31.072 -43.895)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <g fill="#fff" fill-rule="nonzero">
+    <path class="fil0 str0" d="m13310 20874s-3-105-23-151-60-94-86-83c-20 9-11 54 3 89 15 34 75 132 75 132z"/>
+    <path class="fil0 str0" d="m13310 20874s-116 87-145 102c-29 14-72 30-87 9-16-21 19-55 36-63 17-9 97-57 165-60l31 13z"/>
+    <path class="fil0 str0" d="m13080 20772c-39 4-73 30-104 41-32 11-53 40-39 63 17 28 69 3 93-13s83-76 83-76c6-31 7-92 3-109s-26-80-66-69c-26 7-17 44-7 66 10 21 37 96 37 96z"/>
+    <path class="fil0 str0" d="m12938 20703s-31-42-36-53c-4-11-11-37 11-46 23-9 51 24 56 46 4 21-2 59-5 63 0 0-37 41-56 51s-66 22-77-2c-11-23-3-41 23-46 26-4 83-14 83-14z"/>
+    <path class="fil0 str0" d="m12844 20662s-51 17-67 9c-16-9-19-33-9-47 11-16 39-23 50-10 12 13 26 49 26 49z"/>
+   </g>
+   <path class="fil1 str0" d="m13450 20923c-46-6-226-84-289-113-96-44-262-127-317-149" fill="none"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="2.887mm" height="6.9437mm" version="1.1" viewBox="0 0 1.7322 4.1662" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-46.868 -77.909)">
+  <g id="Folhas" transform="matrix(.006 0 0 .006 -31.004 -12.461)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m13123 15073s138 205 138 315-73 258-138 258c-64 0-138-149-138-258 0-110 138-315 138-315z" fill="#fff" fill-rule="nonzero"/>
+   <line class="fil1 str0" x1="13123" x2="13123" y1="15130" y2="15756" fill="none"/>
+   <path class="fil1 str0" d="m13123 15263c0-26-61-62-61-62m61 234c0-26-114-94-114-94m114 241c0-26-100-85-100-85m99-234c0-26 61-62 61-62m-61 234c0-26 114-94 114-94m-114 241c0-26 100-85 100-85" fill="none"/>
+  </g>
+ </g>
+</svg>

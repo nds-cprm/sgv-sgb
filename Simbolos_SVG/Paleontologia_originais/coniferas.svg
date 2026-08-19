@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="4.067mm" height="6.3143mm" version="1.1" viewBox="0 0 2.4402 3.7886" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.507 -78.697)">
+  <g id="Coníferas" transform="matrix(.006 0 0 .006 -31.981 -37.577)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m13220 19409c57 56 95 158 95 274 0 177-88 321-197 321s-197-144-197-321c0-116 38-218 94-274 30-30 65-23 103-23s73-7 102 23z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m12952 19509c52 0 220-75 239-119m-266 223c158 0 311-113 329-162m-252 492c154 0 277-87 296-131m-334 70c153-3 332-138 351-181m-393 8c158 0 350-129 370-178m-357 270c148 0 355-143 375-192m-26-101c-57 0-222-74-241-118m268 223c-154 0-312-115-330-161m253 490c-144 0-264-77-293-122m332 62c-148-1-322-129-351-176m393 3c-165 0-349-127-371-176m357 268c-150 0-355-141-375-190" fill="none"/>
+  </g>
+ </g>
+</svg>

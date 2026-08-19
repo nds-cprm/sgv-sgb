@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="7.4254mm" height="6.5551mm" version="1.1" viewBox="0 0 4.4552 3.9331" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.465 -77.661)">
+  <g id="Répteis" transform="matrix(.006 0 0 .006 -30.926 .16625)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <g fill="#fff" fill-rule="nonzero">
+    <path class="fil0 str0" d="m13135 13028c-9-3-24-5-38-1s-19 11-20 19z"/>
+    <path class="fil0 str0" d="m12964 13089c-12-3-41-8-55-2s-24 30-24 44z"/>
+    <path class="fil0 str0" d="m13448 12929c-16-4-52 19-68 19s-15-12-33 0-1-24-36-2c-35 23-82 43-123 62s-144 45-190 65-127 54-180 111-102 129-69 220 110 154 219 160 189-16 189-29-34-29-109-29-202-31-218-66 67-179 107-182 79 8 110-7c4-2 10-8 10-8l1 44 25 23 44 2 22 12-12-20 32 3-22-10 30-2-27-7 30-8-64-3v-44s47-11 64-30c17-18 69-65 92-71 7-2 21 1 24 10 9 21 7 60 20 65 19 8 57 7 57 7l-17-14 31 4-19-10 29 2-24-8 20-6-51-1-2-28s-2-44-15-58 47-28 42-51c-5-24 23-7 32-36 10-29 63-30 62-44s11-16 6-25c-4-10-13-11-21-13z"/>
+   </g>
+   <path class="fil1 str0" d="m13117 13235-1-32s-30-48-75-44c-44 4-67 22-73 40m358-103c-15-21-31-46-48-46-15 0-38 12-39 29m226-122-19 4-16 15h-19l-18 21-49-2-17 24m-457 452c-41-16-133-81-131-125" fill="none"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.535mm" height="3.116mm" version="1.1" viewBox="0 0 3.921 1.8696" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.035 -78.233)">
+  <g id="Perfurações" transform="matrix(.006 0 0 .006 -31.6 -77.682)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m13417 26094c17-62-47-109-108-101l-5 3c-18 13-86 98-110 102-29 4-281-9-305 4s-108 70-110 101c-2 42 42 88 92 88 34 0 77-59 97-64 82-18 199 27 286-2 17-6 140-101 160-126 1-1 2-2 2-3z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m13416 26093c-59 7-113-44-107-98" fill="none"/>
+  </g>
+ </g>
+</svg>

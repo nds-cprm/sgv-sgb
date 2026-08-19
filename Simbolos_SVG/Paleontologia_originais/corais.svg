@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.387mm" height="6.387mm" version="1.1" viewBox="0 0 3.8322 3.8322" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.395 -75.652)">
+  <g id="Corais" transform="matrix(.006 0 0 .006 8.6711 -27.606)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m6753 17529c0 173-140 313-313 313s-313-140-313-313 140-313 313-313 313 140 313 313z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m6435 17217v153m0 318v153m89-223 131 131m-441-441 131 131m401 89h-153m-317 0h-153m401-89 131-131m-441 441 131-131" fill="none"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="5.511mm" height="3.1946mm" version="1.1" viewBox="0 0 5.511 3.1946" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-63.314 -108.46)">
+  <g transform="matrix(.01 0 0 .01 -22.064 -14.954)" clip-rule="evenodd" fill="none" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="50">
+   <path class="fil2 str1" d="m8541 12581c31-4 62-9 85-22s38-34 52-58 27-52 37-70c10-19 16-28 26-37 11-9 26-18 50-23 25-5 59-6 85-4 26 1 42 5 55 16 12 11 20 30 26 54 5 25 8 56 17 82s24 49 38 63c15 14 29 20 40 25 11 4 20 7 29 10"/>
+   <path class="fil2 str1" d="m8715 12431c32 20 64 40 96 50s65 11 93 6c28-6 52-18 76-30"/>
+   <path class="fil2 str1" d="m8811 12481c-8 26-16 52-29 73s-30 36-48 44c-18 9-35 11-53 14"/>
+   <path class="fil2 str1" d="m8857 12490c3 21 6 41 13 60s19 35 32 48c14 13 30 22 40 28 11 6 16 10 21 13"/>
+  </g>
+ </g>
+</svg>

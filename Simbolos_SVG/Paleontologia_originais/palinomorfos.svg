@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.207mm" height="2.407mm" version="1.1" viewBox="0 0 3.7242 1.4442" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.037 -79.517)">
+  <g id="Simb.Genérica_Palinomorfos" transform="matrix(.006 0 0 .006 -72.601 -11.963)" clip-rule="evenodd" fill="#fff" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m19750 15443c42 0 76-34 76-76s-34-76-76-76-76 34-76 76 34 76 76 76z"/>
+   <path class="fil0 str0" d="m19939 15481c63 0 115-51 115-114s-51-114-115-114c-63 0-114 51-114 114s51 114 114 114z"/>
+   <path class="fil0 str0" d="m19560 15481c63 0 115-51 115-114s-51-114-115-114c-63 0-114 51-114 114s51 114 114 114z"/>
+  </g>
+ </g>
+</svg>

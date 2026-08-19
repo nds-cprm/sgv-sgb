@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="3.3104mm" height="6.2328mm" version="1.1" viewBox="0 0 1.9863 3.7397" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-46.118 -76.016)">
+  <g id="Gastrópode_Genérico" transform="matrix(.006 0 0 .006 -31.602 43.602)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m13074 5922c49 2 70 32 68 58s-36 41-77 39-70-7-96-49c-26-43 7-207 41-311s104-239 128-250c24-10 19 144 51 229 33 86 89 166 89 178 0 26-62 58-77 73s-29 24-62 72l-67-39z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m12963 5946c9-45 90-73 130-88 47-18 98-38 180-33m-308 49c11-38 66-69 76-72s42-18 88-31c47-13 74-16 116-14m-267 24c18-39 62-58 75-64 14-6 44-19 67-23 38-7 55-10 92-2m-204-26c16-24 65-48 84-52 19-5 54-13 88-3m-121-72c19-22 41-24 52-24s35-1 51 3" fill="none"/>
+  </g>
+ </g>
+</svg>

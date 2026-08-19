@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.1109mm" height="1.9139mm" version="1.1" viewBox="0 0 3.6665 1.1483" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.767 -77.558)">
+  <g id="Belemnoids" transform="matrix(.006 0 0 .006 9.1838 -85.512)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <polygon class="fil0 str0" points="6474 27318 6098 27274 6474 27230 6702 27186 6702 27274 6702 27362" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m6553 27215-17 59 17 59m-64-106-17 47 17 47m-64-85-17 38 17 38m-64-69-17 31 17 31m-64-54-17 24 17 23m-64-39-17 16 17 16" fill="none"/>
+  </g>
+ </g>
+</svg>

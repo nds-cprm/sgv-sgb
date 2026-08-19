@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="4.2425mm" height="6.3526mm" version="1.1" viewBox="0 0 2.5455 3.8116" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-42.038 -74.617)">
+  <g id="Aracnídeo" transform="matrix(.006 0 0 .006 4.8358 16.44)" clip-rule="evenodd" fill="#fff" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m6438 9857c0 24-11 43-25 43s-25-19-25-43 11-43 25-43 25 19 25 43z"/>
+   <path class="fil0 str0" d="m6444 9954c0 30-14 54-31 54s-31-24-31-54 14-54 31-54 31 24 31 54z"/>
+   <path class="fil0 str0" d="m6452 10075c0 37-18 67-39 67-22 0-39-30-39-67s18-67 39-67c22 0 39 30 39 67z"/>
+   <polygon class="fil0 str0" points="6269 9699 6382 9940 6387 9922"/>
+   <polygon class="fil0 str0" points="6205 9781 6382 9969 6381 9951"/>
+   <polygon class="fil0 str0" points="6238 10193 6394 9998 6388 9987"/>
+   <polygon class="fil0 str0" points="6373 10076 6365 10081 6326 10330 6375 10094"/>
+   <polygon class="fil0 str0" points="6556 9699 6444 9940 6439 9922"/>
+   <polygon class="fil0 str0" points="6620 9781 6443 9969 6445 9951"/>
+   <polygon class="fil0 str0" points="6587 10193 6431 9998 6438 9987"/>
+   <polygon class="fil0 str0" points="6453 10076 6461 10081 6499 10330 6451 10094"/>
+  </g>
+ </g>
+</svg>

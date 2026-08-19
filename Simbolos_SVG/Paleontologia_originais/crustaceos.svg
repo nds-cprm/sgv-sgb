@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="7.6668mm" height="6.1103mm" version="1.1" viewBox="0 0 4.6001 3.6662" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.833 -76.765)">
+  <g id="Crustáceo" transform="matrix(.006 0 0 .006 9.445 12.117)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m6296 11054c-13 17-16 27-16 27l-49-87 13-57 55-97 92-60-58 79 78-55-65 94-44 54-4 43 20 38s-12 10-21 22z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil0 str0" d="m6600 11054c13 17 16 28 16 28l49-87-13-57-55-97-92-60 58 79-78-55 65 94 44 54 4 43-20 38s12 10 21 21z" fill="#fff" fill-rule="nonzero"/>
+   <polyline class="fil1 str0" points="6299 10840 6332 10858 6345 10897" fill="none"/>
+   <g fill="#fff" fill-rule="nonzero">
+    <path class="fil0 str0" d="m6448 11235c21 0 62-1 92-31s35-78 75-101c23-13-47-122-167-122-121 0-190 108-167 122 40 23 45 72 75 101 30 30 71 31 92 31z"/>
+    <path class="fil0 str0" d="m6320 11147s-6-10-12-19c-6-8-12-14-12-14l-70-25-59-60-4-152-13 153 70 80z"/>
+    <polygon class="fil0 str0" points="6202 11138 6339 11182 6326 11159 6207 11118 6136 11111 6075 11157 6071 11224 6088 11169 6141 11131"/>
+    <path class="fil0 str0" d="m6354 11203s-6-6-9-11c-4-5-7-11-7-11l-99-7-64 20-52 43-18 81 33-68 50-32 61-21z"/>
+   </g>
+   <polyline class="fil1 str0" points="6597 10840 6564 10858 6551 10897" fill="none"/>
+   <g fill="#fff" fill-rule="nonzero">
+    <path class="fil0 str0" d="m6576 11147s5-10 12-19c6-8 12-14 12-14l70-25 59-60 4-152 13 153-70 80z"/>
+    <polygon class="fil0 str0" points="6694 11138 6557 11182 6570 11159 6689 11118 6760 11111 6821 11157 6825 11224 6808 11169 6755 11131"/>
+    <path class="fil0 str0" d="m6542 11203s6-6 9-11c4-5 7-11 7-11l99-7 64 20 52 43 18 81-33-68-50-32-61-21z"/>
+    <path class="fil0 str0" d="m6542 11203 17 16 76 33 52 47 22 40-56 34 11-62-50-22-65-43-101-5-101 5-65 43-50 22 11 62-56-34 22-40 52-47 76-33 17-16 7 6c29 25 67 26 87 26s58-1 87-26l6-6z"/>
+   </g>
+  </g>
+ </g>
+</svg>

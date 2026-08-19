@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="7.7531mm" height="3.8877mm" version="1.1" viewBox="0 0 4.6519 2.3326" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-45.893 -77.427)">
+  <g id="Peixes" transform="matrix(.006 0 0 .006 -30.535 11.95)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m12889 11102c83-49 191-95 284-95 177 0 329 123 329 123s-145 81-320 81c-100 0-208-48-291-108l-3-2z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m12743 11212c17-22 72-68 144-110l2-1c-61-44-109-95-132-137" fill="none"/>
+   <polygon class="fil2 str0" points="13176 11211 13235 11208 13141 11297" fill-rule="nonzero"/>
+   <polygon class="fil2 str0" points="13269 11017 13215 11008 13211 10916" fill-rule="nonzero"/>
+  </g>
+ </g>
+</svg>

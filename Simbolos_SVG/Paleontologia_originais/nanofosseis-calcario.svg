@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="6.397mm" height="4.197mm" version="1.1" viewBox="0 0 3.8382 2.5182" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.731 -78.475)">
+  <g id="Nanofósseis" transform="matrix(.006 0 0 .006 -71.949 .23682)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m19764 13453c172 0 316-92 316-201s-147-206-318-206-309 96-309 204c0 109 139 202 310 202z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m19530 13118 45 55m78-112 25 71m94-85 4 77m135-53-28 64m-427 109 78 6m34 66-46 57m140-4-23 64m135-51v69m106-79 29 57m68-111 50 43m-61-180 52-49m-17 111 79 2" fill="none"/>
+   <path class="fil2 str0" d="m19680 13277c15 0 27-12 27-26 0-15-12-27-27-27s-26 12-26 27 12 26 26 26z" fill-rule="nonzero"/>
+   <path class="fil2 str0" d="m19863 13277c15 0 26-12 26-27s-12-27-26-27c-15 0-27 12-27 27s12 27 27 27z" fill-rule="nonzero"/>
+  </g>
+ </g>
+</svg>

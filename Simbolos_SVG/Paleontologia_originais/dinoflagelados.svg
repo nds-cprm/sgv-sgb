@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="3.3377mm" height="6.1935mm" version="1.1" viewBox="0 0 2.0026 3.7161" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.879 -77.895)">
+  <g id="Dinoflagelados" transform="matrix(.006 0 0 .006 -72.611 -32.001)" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" stroke="#000" stroke-width="12.7">
+   <path class="fil0 str0" d="m19757 18393s131 175 147 265-10 176-19 209c-9 32-28 51-40 53-12 1-69-37-69-37s-38 46-74 46c-35 0-90-43-98-66-9-24-19-166-15-198s25-93 51-131 116-140 116-140z" fill="#fff" fill-rule="nonzero"/>
+   <path class="fil1 str0" d="m19591 18724c56 21 107 24 141 24s129-3 175-29m-313 66c46 18 107 19 153 19s96 2 156-25m-153-127c18 0 33-15 33-33s-15-33-33-33-33 15-33 33 15 33 33 33zm7-336v78" fill="none"/>
+  </g>
+ </g>
+</svg>
